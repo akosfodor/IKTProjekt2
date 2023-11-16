@@ -1,12 +1,12 @@
 nav ul li a
 {
     text-decoration: none;
-    color: white;
+    color: lightgrey;
     float: left;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 nav ul
@@ -28,10 +28,97 @@ nav ul li a:hover
 nav ul li a.active
 {
     background-color: rgb(97, 130, 100);
-    color: white;
+    color: lightgray;
 }
 
 body
 {
     background-color: lightgreen;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+article p a
+{
+    text-decoration: none;
+    color: black;
+}
+
+article
+{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+header
+{
+    font-size: 18px;
+}
+
+.link
+{
+    border-radius: 20px;
+    width: 300px;
+    background-color:rgb(121, 172, 120);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    box-shadow: 6px 6px darkgrey;
+}
+
+.egyeni
+{
+    width: 500px;
+    margin: auto;
+}
+
+.link
+{
+    color: black;
+}
+
+.active1:hover
+{
+    transition: 0.5s;
+    background-color:rgb(97, 130, 100);
+    color: lightgreen;
+    box-shadow: 0px;
+}
+
+.colorChange:hover
+{
+    transition: 0.5s;
+    color: lightgreen;
+}
+
+.jobbra
+{
+    margin-right: 100px;
+    float: right;
+    width: 300px;
+}
+
+.balra
+{
+    margin-left: 100px;
+    float: left;
+    width: 300px;
+}
+
+img
+{
+    box-shadow: 15px 15px darkgrey;
+}
+
+footer
+{
+    background-color:rgb(121, 172, 120);
+}
+
+footer ul li
+{
+    text-decoration: none;
+    list-style-type: none;
 }
