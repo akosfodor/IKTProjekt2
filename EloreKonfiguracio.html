@@ -12,8 +12,7 @@
 <body>
     <div id="container">
         <header>
-            <a href="#"></a>
-            <p>Mechwart Computers</p>
+            <p><a href="Áruház.html">Mechwart Computers</a></p>
         </header>
         <nav>
             <ul>
@@ -23,6 +22,7 @@
             </ul>
         </nav>
         <article>
+          <h1>Előre összerakott gépeink</h1>
             <div class="gepek">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
@@ -41,7 +41,7 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                   </div>
                 <h4>Average Mechwart school computer</h4>
-                <p>Egy átlagos Mechwartos gép konfigurációja. Előnye, hogy átlagosan már 30 perc alatt képes megnyitni a Visual Studio-t. A 2000-es évek elején megjelenő játékokat gond nélkül képes futtatni.<a href="#kicsi">*</a> </p> <input type="button" class="button" value="Megvásárlom" onclick="Vasarlas()">
+                <p>Egy átlagos Mechwartos gép konfigurációja. Előnye, hogy átlagosan már 30 perc alatt képes megnyitni a Visual Studio-t. A 2000-es évek elején megjelenő játékokat gond nélkül képes futtatni.<a href="#kicsi">*</a> </p> <a href="Adatok.html"><input type="button" class="button" value="Megvásárlom" onclick="Vasarlas()"></a>
             </div>
             <div class="gepek">
                 <div class="slideshow-container">
@@ -61,16 +61,77 @@
                     <a class="next" onclick="plusSlides2(1)">&#10095;</a>
                   </div>
                 <h4>Budget Gamer PC</h4>
-                <p>Egy kiváló választás kezdő gamereknek. Az átlagos gépigényű mai címek gond nélkül futnak rajta.</p> <input type="button" class="button" value="Megvásárlom">
+                <p>Egy kiváló választás kezdő gamereknek. Az átlagos gépigényű mai címek megfelelően futnak rajta.</p> <a href="Adatok.html"><input type="button" class="button" value="Megvásárlom"></a>
             </div>
+            <div class="gepek">
+              <div class="slideshow-container">
+                  <div class="mySlides3 fade">
+                    <img class="gepkepek3" src="cooler master gépház.webp">
+                  </div>
+                
+                  <div class="mySlides3 fade">
+                    <img class="gepkepek3" src="Rájzen jobb.jpg">
+                  </div>
+                
+                  <div class="mySlides3 fade">
+                    <img class="gepkepek3" src="rtx4060.jpg">
+                  </div>
+                
+                  <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                </div>
+              <h4>Average Gamer PC</h4>
+              <p>Egy konfiguráció, amely már a nagyobb gépigényű játékoknál is megállja a helyét.</p> <a href="Adatok.html"><input type="button" class="button" value="Megvásárlom"></a>
+          </div>
+          <div class="gepek">
+            <div class="slideshow-container">
+                <div class="mySlides4 fade">
+                  <img class="gepkepek4" src="nzxt.webp">
+                </div>
+              
+                <div class="mySlides4 fade">
+                  <img class="gepkepek4" src="rájzen mégjobb.jpg">
+                </div>
+              
+                <div class="mySlides4 fade">
+                  <img class="gepkepek4" src="rtx4090.jpg">
+                </div>
+              
+                <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+              </div>
+            <h4>High-end Gamer PC</h4>
+            <p>A ma létrehozható legerősebb gamer PC. Minden játék a legmagasabb grafikai beállításokon fut rajta. Ha a PC-re 2026-ban érkező GTA VI gondtalan futtatása a cél, ez a megfelelő választás.</p> <a href="Adatok.html"><input type="button" class="button" value="Megvásárlom"></a>
+        </div>
+        <div class="gepek">
+          <div class="slideshow-container">
+              <div class="mySlides5 fade">
+                <img class="gepkepek5" src="solid1.jpg">
+              </div>
+            
+              <div class="mySlides5 fade">
+                <img class="gepkepek5" src="rájzen legjobb.webp">
+              </div>
+            
+              <div class="mySlides5 fade">
+                <img class="gepkepek5" src="a6000.webp">
+              </div>
+            
+              <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+            </div>
+          <h4>Graphic Master PC</h4>
+          <p>Kifejezetten nagy grafikus eljesítményt igénylő feladatokra tervezett konfiguráció. Ezt alátámasztja a 48 GB VRAM-mal rendelkező videokártya.</p> <a href="Adatok.html"><input type="button" class="button" value="Megvásárlom"></a>
+      </div>
         </article>
         <footer id="elerhetoseg">
             <p>
                 Elérhetőségeink:
                 <ul>
-                    <li>Debrecen, Széchenyi utca 58.</li>
-                    <li>Tel.: 06 70 ott repül batman</li>
-                    <li class="kicsi">*Nem garantált, hogy gond nélkül képes futtatni.</li>
+                  <li>Debrecen, Széchenyi utca 58.</li>
+                  <li>Tel.: 06 70 123 4567</li>
+                  <li>E-mail: mechwartcomputers.info@gmail.com</li>
+                    <li class="kicsi" id="kicsi">*Nem garantált, hogy gond nélkül képes futtatni.</li>
                 </ul>
             </p>
         </footer>
@@ -78,5 +139,8 @@
 <script src="aruhaz.js"></script>
 <script src="slide1.js"></script>
 <script src="slide2.js"></script>
+<script src="slide3.js"></script>
+<script src="slide4.js"></script>
+<script src="slide5.js"></script>
 </body>
 </html>
