@@ -20,20 +20,48 @@ namespace ConsoleApp8
         }
         static void Kiirat (string fajlNev)
         {
-            Console.Write("Bevitt alkatrészek törlése(igen/nem):");
-            string torles = Console.ReadLine();
-            if (torles == "igen")
+            Beolvasas (fajlNev);
+            Console.Write("Új alkatrész hozzáadása(igen/nem):");
+            string valasz = Console.ReadLine();
+            if (valasz == "igen")
             {
-                Console.WriteLine("Az adatok törölve lettek!");
+                Console.WriteLine("\n");
+                Console.Write("Alkatrész típusa:");
+                string tipus = Console.ReadLine();
+                Console.Write("Alkatrész neve:");
+                string nev = Console.ReadLine();
+                Console.Write("Alkatrész paramétere:");
+                string parameter = Console.ReadLine();
+                Console.Write("Alkatrész ára:");
+                string ar = Console.ReadLine();
+                File.AppendAllText(fajlNev, $"{tipus};{nev};{parameter};{ar}" + Environment.NewLine);
+                Console.WriteLine("Alkatrész hozzáadva\n");
+                
             }
-            else if (torles == "nem")
+        }
+        static void Search1()
+        {
+            Console.WriteLine("Keresés");
+            Console.Write("Alkatrész típusa vagy neve:");
+            string tipusnev = Console.ReadLine();
+            int db = 0;
+            foreach (var a in alkatreszek)
             {
-                Console.WriteLine("Az adatok NEM lettek törölve!");
+                if (a.Tipus.ToLower() == tipusnev.ToLower() || a.Nev.ToLower().Contains(tipusnev.ToLower()))
+                { 
+                    Console.WriteLine($"Típus: {a.Tipus}\nNév: {a.Nev}\nParaméterek: {a.Parameter}\nÁr: {a.Ar} Ft\n");
+                    db++;
+                }
             }
-            else
-            {
-                Console.WriteLine("Nem lesznek törölve az adatok a helytelen válasz miatt!");
-            }
+            if (db == 0) Console.WriteLine("Nem található ilyen alkatrész!");
+        }
+        static void Search2()
+        {
+            Console.Write("Minimum ár:");
+            int min = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Maximum ár:");
+            int max = Convert.ToInt32(Console.ReadLine());
+
         }
         static void Main(string[] args)
         {
@@ -42,3 +70,15 @@ namespace ConsoleApp8
         }
     }
 }
+/*
+Uno
+Dos
+Tres
+Cuatro
+Cinco
+Seis
+Siete
+Ocho
+Nueve
+Diez
+*/

@@ -21,6 +21,11 @@ namespace ConsoleApp8
             this.parameter = parameter;
             this.ar = ar;
         }
+
+        public string Tipus { get => tipus; }
+        public string Nev { get => nev;}
+        public string Parameter { get => parameter; }
+        public string Ar { get => ar; }
     }
 }
 
