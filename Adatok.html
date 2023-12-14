@@ -27,9 +27,9 @@
                 <h5>Vásárló adatai</h5>
                 <form action="">
                     <label for="">
-                        Név: <input type="text"><br>
-                        E-mail cím: <input type="text"><br>
-                        Telefonszám: <input type="number"><br>
+                        Név: <input type="text" required><br>
+                        E-mail cím: <input type="text" required><br>
+                        Telefonszám: <input type="number" required><br>
                     </label>
                 </form>
             </div>
@@ -48,13 +48,20 @@
                 <h5>Szállítás módja</h5>
                 <form action="">
                     <label for="">
-                        Város: <input type="text"><br>
-                        Irányítószám: <input type="number"><br>
-                        Utca: <input type="text">
-                        Házszám: <input type="number">
+                        GLS Házhozszállítás: 1499 Ft <input type="radio" name="radio" class="forma"><br>
+                        GLS Csomagpont: 799 Ft<input type="radio" name="radio" class="forma"><br>
+                        Foxpost Csomagpont: 599 Ft<input type="radio" name="radio" class="forma"><br>
+                        DPD Futárszolgálat: 1599 Ft<input type="radio" name="radio" class="forma"><br>
+                        MPL Csomagpont: 899 Ft<input type="radio" name="radio" class="forma"><br>
+                        Sprinter Futárszolgálat: 1100 Ft<input type="radio" name="radio" class="forma"><br>
                     </label>
                 </form>
             </div>
+            <p>
+                <form class="ÁSZF">
+                    <input type="checkbox" required> Elolvastam és elfogadom az <a href="ÁSZF.html">Altalános Szerződési Feltételeket.</a>
+                </form>
+            </p>
             <p>
                 <a class="adatok" href="Sikeres.html" onclick="Osszegyujt()">Adatok leszívása</a>
             </p>
@@ -71,5 +78,6 @@
         </footer>
     </div>
 <script src="aruhaz.js"></script>
+<script src="Adatok.js"></script>
 </body>
 </html>

@@ -31,14 +31,41 @@ nav ul li a.active
     color: lightgray;
 }
 
-.adat
+.ÁSZF
 {
-
+    float: left;
+    font-size: 20px;
+    margin-left: 200px;
 }
 
-.adat:hover
+.ÁSZF a
 {
-    
+    text-decoration: none;
+}
+
+.feher p
+{
+    background-color: antiquewhite;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.feher
+{
+    border: 120px;
+}
+
+.forma
+{
+    float: right;
+    margin-right: 1100px;
+}
+
+.ÁSZFadatok
+{
+    text-align: left;
+    margin: auto;
 }
 
 .adatok
