@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <title>Mechwart Computers</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <p><a href="Áruház.html">Mechwart Computers</a></p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Áruház.html">Kezdőoldal</a></li>
+                <li><a href="Rolunk.html">Rólunk</a></li>
+                <li><a href="#elerhetoseg">Elérhetőségeink</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Vásárlás adatai</h1>
+            <div class="adat changeColor">
+                <h5>Vásárló adatai</h5>
+                <form action="">
+                    <label for="">
+                        Név: <input type="text"><br>
+                        E-mail cím: <input type="text"><br>
+                        Telefonszám: <input type="number"><br>
+                    </label>
+                </form>
+            </div>
+            <div class="adat changeColor">
+                <h5>Szállítási Adatok</h5>
+                <form action="">
+                    <label for="">
+                        Város: <input type="text"><br>
+                        Irányítószám: <input type="number"><br>
+                        Utca: <input type="text">
+                        Házszám: <input type="number">
+                    </label>
+                </form>
+            </div>
+            <div class="adat changeColor">
+                <h5>Szállítás módja</h5>
+                <form action="">
+                    <label for="">
+                        Város: <input type="text"><br>
+                        Irányítószám: <input type="number"><br>
+                        Utca: <input type="text">
+                        Házszám: <input type="number">
+                    </label>
+                </form>
+            </div>
+            <p>
+                <a class="adatok" href="Sikeres.html" onclick="Osszegyujt()">Adatok leszívása</a>
+            </p>
+        </article>
+        <footer id="elerhetoseg">
+            <p>
+                Elérhetőségeink:
+                <ul>
+                    <li>Debrecen, Széchenyi utca 58.</li>
+                    <li>Tel.: 06 70 123 4567</li>
+                    <li>E-mail: mechwartcomputers.info@gmail.com</li>
+                </ul>
+            </p>
+        </footer>
+    </div>
+<script src="aruhaz.js"></script>
+</body>
+</html>

@@ -31,6 +31,37 @@ nav ul li a.active
     color: lightgray;
 }
 
+.adat
+{
+
+}
+
+.adat:hover
+{
+    
+}
+
+.adatok
+{
+    float: right;
+    color: black;
+    margin-right: 180px;
+    border-radius: 20px;
+    width: 280px;
+    background-color:rgb(121, 172, 120);
+    margin-left: auto;
+    margin-bottom: 50px;
+    box-shadow: 6px 6px darkgrey;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.adatok:hover
+{
+    transition: 0.5s;
+    background-color: rgb(97, 130, 100);
+    color: lightgreen;
+}
+
 body
 {
     background-color: lightgreen;
@@ -52,9 +83,11 @@ article
     font-size: 30px;
 }
 
-header
+header p a
 {
     font-size: 18px;
+    text-decoration: none;
+    color: black;
 }
 
 .link
@@ -87,6 +120,11 @@ header
     box-shadow: 0px;
 }
 
+.colorChange
+{
+    transition: 1s;
+}
+
 .colorChange:hover
 {
     transition: 0.5s;
@@ -107,7 +145,7 @@ header
     width: 300px;
 }
 
-img
+.aruhaz
 {
     box-shadow: 15px 15px darkgrey;
 }
@@ -130,15 +168,17 @@ footer ul li
 
 .gepek
 {
-    width: 1000px;
+    width: 1500px;
     text-align: left;
-    margin: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
     background-color:rgb(121, 172, 120);
     padding-left: 15px;
     padding-bottom: 15px;
     padding-right: 15px;
     padding-top: 15px;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .gepek p
@@ -159,7 +199,6 @@ footer ul li
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -211,4 +250,70 @@ footer ul li
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.slideshow-container
+{
+    float: right;
+}
+
+.gepkepek1
+{
+    width: 250px;
+    height: 260px;
+}
+
+.gepkepek2
+{
+    width: 250px;
+    height: 230px;
+}
+
+.gepkepek3
+{
+    width: 250px;
+    height: 230px;
+}
+
+.gepkepek4
+{
+    width: 250px;
+    height: 260px;
+}
+
+.gepkepek5
+{
+    width: 250px;
+    height: 260px;
+}
+
+.gepkepek6
+{
+    width: 250px;
+    height: 230px; 
+}
+
+form
+{
+    font-size: 20px;
+}
+
+.check
+{
+    width: 215px;
+}
+
+.adat
+{
+    width: 1500px;
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color:rgb(121, 172, 120);
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
