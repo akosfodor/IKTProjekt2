@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="thumbnail_mehwart_f1dce688ee.webp" type="webp">
     <title>Mechwart Computers</title>
 </head>
 <body>
@@ -36,6 +37,25 @@
             <p class="link active1">
                 <a class="colorChange" href="EloreKonfiguracio.html">Megnézem!</a>
             </p>
+            <p><h2 class="erth2">Értékelések</h2></p>
+                <div class="atlagos" id="atlagos">Átlagos értékelés: <span id="atlagert">4.75</span></div>
+
+                <div class="osszes" id="osszes">
+                    <h2 class="erth2">Összes értékelés</h2>
+                    <div class="ertekelesek" id="ertekelesek">
+                        <div class="ertekeles">Névtelen felhasználó: <br> <span class="ertek">5.0</span> - <span class="szoveg">Minden hibátlanul működik.</span></div>
+                        <div class="ertekeles">Névtelen felhasználó: <br> <span class="ertek">4.5</span> - <span class="szoveg">A gép időben és épségben érkezett meg, beüzemelés után kiválóan működik.</span></div>
+                    </div>
+                </div>
+        
+                <div class="ujertekeles">
+                    <h2>Értékelés adása</h2>
+                    <label for="ujert">Értékelés: </label>
+                    <input type="number" step="0.1" min="1" max="5" id="ujert"><br>
+                    <label for="ujszov">Szöveges értékelés: </label><br>
+                    <input type="text" id="ujszov"><br>
+                    <button class="gomb" onclick="Ertekeles()">Hozzáadás</button>
+                </div>
         </article>
         <footer id="elerhetoseg">
             <p>

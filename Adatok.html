@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="thumbnail_mehwart_f1dce688ee.webp" type="webp">
     <title>Mechwart Computers</title>
 </head>
 <body>
@@ -23,47 +24,79 @@
         </nav>
         <article>
             <h1>Vásárlás adatai</h1>
-            <div class="adat changeColor">
-                <h5>Vásárló adatai</h5>
+            <div class="adat">
+                <h5>Vásárló adatai<span class="piros">*</span></h5>
                 <form action="">
                     <label for="">
-                        Név: <input type="text" required><br>
-                        E-mail cím: <input type="text" required><br>
-                        Telefonszám: <input type="number" required><br>
+                        Név: <input type="text" id="nev"><br>
+                        <p id="pnev" class="piros"></p>
+                        E-mail cím: <input type="text" id="email"><br>
+                        <p id="pemail" class="piros"></p>
+                        Telefonszám: +36 <input type="number" id="tel"><br>
+                        <p id="ptel" class="piros"></p>
                     </label>
                 </form>
             </div>
-            <div class="adat changeColor">
-                <h5>Szállítási Adatok</h5>
+            <div class="adat">
+                <h5>Szállítási Adatok<span class="piros">*</span></h5>
                 <form action="">
                     <label for="">
-                        Város: <input type="text"><br>
-                        Irányítószám: <input type="number"><br>
-                        Utca: <input type="text">
-                        Házszám: <input type="number">
+                        Város: <input type="text" id="var"><br>
+                        <p id="pvar" class="piros"></p>
+                        Irányítószám: <input type="number" min="0" maxlength="4" id="irsz"><br>
+                        <p id="pirsz" class="piros"></p>
+                        Utca: <input type="text" id="utca">
+                        <p id="putca" class="piros"></p>
+                        Házszám: <input type="number" id="hsz">
+                        <p id="phsz" class="piros"></p>
                     </label>
                 </form>
             </div>
-            <div class="adat changeColor">
-                <h5>Szállítás módja</h5>
+            <div class="adat">
+                <h5>Szállítás módja<span class="piros">*</span></h5>
                 <form action="">
                     <label for="">
-                        GLS Házhozszállítás: 1499 Ft <input type="radio" name="radio" class="forma"><br>
-                        GLS Csomagpont: 799 Ft<input type="radio" name="radio" class="forma"><br>
-                        Foxpost Csomagpont: 599 Ft<input type="radio" name="radio" class="forma"><br>
-                        DPD Futárszolgálat: 1599 Ft<input type="radio" name="radio" class="forma"><br>
-                        MPL Csomagpont: 899 Ft<input type="radio" name="radio" class="forma"><br>
-                        Sprinter Futárszolgálat: 1100 Ft<input type="radio" name="radio" class="forma"><br>
+                        GLS Házhozszállítás: <span class="ar">1499 Ft</span> <input type="radio" name="radio" class="forma" id="kivalaszt" value="1499"><br>
+                        GLS Csomagpont: <span class="ar">799 Ft</span><input type="radio" name="radio" class="forma" value="799"><br>
+                        Foxpost Csomagpont: <span class="ar">599 Ft</span><input type="radio" name="radio" class="forma"  value="599"><br>
+                        DPD Futárszolgálat: <span class="ar">1599 Ft</span><input type="radio" name="radio" class="forma" value="1599"><br>
+                        MPL Csomagpont: <span class="ar">899 Ft</span><input type="radio" name="radio" class="forma" value="899"><br>
+                        Sprinter Futárszolgálat: <span class="ar">1100 Ft</span><input type="radio" name="radio" class="forma" value="1100"><br>
+                        <p id="pradio" class="piros"></p>
                     </label>
                 </form>
+            </div>
+            <div class="adat">
+                <h5>Fizetés módja<span class="piros">*</span></h5>
+                <form action="">
+                    <label for="">
+                        Utánvét: (+500 Ft) <input type="radio" name="radio1" class="forma" id="kivalaszt1"><br>
+                        Kártyás fizetés: (ingyenes) <input type="radio" name="radio1" class="forma"><br>
+                        <p id="pradio1" class="piros"></p>
+                    </label>
+                </form>
+            </div>
+            <div class="adat">
+                <h5>Fizetés kártyával</h5>
+                <div class="kartya">
+                    <p id="jobbra">Bank</p>
+                    <input type="number" id="bkszam"> <br>
+                    <input type="text" id="lejarat">
+                    <input type="text" id="kartyanev">
+                </div>
+                <div class="kartya1">
+                    <img src="Magnes.png" id="magnes"><br>
+                    <input type="number" id="cvc"> <br>
+                </div>
             </div>
             <p>
                 <form class="ÁSZF">
-                    <input type="checkbox" required> Elolvastam és elfogadom az <a href="ÁSZF.html">Altalános Szerződési Feltételeket.</a>
+                    <input type="checkbox" id="elfogad"> Elolvastam és elfogadom az <a href="ÁSZF.html">Altalános Szerződési Feltételeket.</a><span class="piros">*</span>
+                    <p id="pelfogad" class="piros"></p>
                 </form>
             </p>
             <p>
-                <a class="adatok" href="Sikeres.html" onclick="Osszegyujt()">Adatok leszívása</a>
+                <input class="adatok betu" type="submit" name="submit" value="Rendelés leadása" onclick="Atiranyitas()">
             </p>
         </article>
         <footer id="elerhetoseg">
@@ -78,6 +111,5 @@
         </footer>
     </div>
 <script src="aruhaz.js"></script>
-<script src="Adatok.js"></script>
 </body>
 </html>
