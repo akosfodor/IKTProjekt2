@@ -1,0 +1,3 @@
+alma;alma;asd;450
+alma;szép;asdasd;450
+Fa;Almafa;2m;5000

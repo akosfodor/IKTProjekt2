@@ -11,10 +11,10 @@ namespace ConsoleApp8
         string tipus;
         string nev;
         string parameter;
-        string ar;
+        int ar;
 
         public Alkatresz() { }
-        public Alkatresz(string tipus, string nev, string parameter, string ar)
+        public Alkatresz(string tipus, string nev, string parameter, int ar)
         {
             this.tipus = tipus;
             this.nev = nev;
@@ -25,7 +25,8 @@ namespace ConsoleApp8
         public string Tipus { get => tipus; }
         public string Nev { get => nev;}
         public string Parameter { get => parameter; }
-        public string Ar { get => ar; }
+        public int Ar { get => ar; set { ar = value; } }
     }
 }
+
 

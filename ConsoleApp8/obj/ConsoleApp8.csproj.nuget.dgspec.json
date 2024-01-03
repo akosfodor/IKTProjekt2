@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\biro.mark.zoltan\\source\\repos\\ConsoleApp8\\ConsoleApp8.csproj": {}
+    "C:\\Users\\marko\\Documents\\IKTProjekt2-C-\\ConsoleApp8\\ConsoleApp8.csproj": {}
   },
   "projects": {
-    "C:\\Users\\biro.mark.zoltan\\source\\repos\\ConsoleApp8\\ConsoleApp8.csproj": {
+    "C:\\Users\\marko\\Documents\\IKTProjekt2-C-\\ConsoleApp8\\ConsoleApp8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\biro.mark.zoltan\\source\\repos\\ConsoleApp8\\ConsoleApp8.csproj",
+        "projectUniqueName": "C:\\Users\\marko\\Documents\\IKTProjekt2-C-\\ConsoleApp8\\ConsoleApp8.csproj",
         "projectName": "ConsoleApp8",
-        "projectPath": "C:\\Users\\biro.mark.zoltan\\source\\repos\\ConsoleApp8\\ConsoleApp8.csproj",
-        "packagesPath": "C:\\Users\\biro.mark.zoltan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\biro.mark.zoltan\\source\\repos\\ConsoleApp8\\obj\\",
+        "projectPath": "C:\\Users\\marko\\Documents\\IKTProjekt2-C-\\ConsoleApp8\\ConsoleApp8.csproj",
+        "packagesPath": "C:\\Users\\marko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marko\\Documents\\IKTProjekt2-C-\\ConsoleApp8\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\biro.mark.zoltan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,12 +54,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gDmxaWSEMbUs3CXAScQ+384Mgmay/lEKNp5aAfZlTK5SPXJYSEVl1fY6iDPE538fwBjAPIub2K8wvMzOM6kbbw==",
+  "dgSpecHash": "lBybcc3txwXcDC5MiKaSkO5yAoC8d8eHxyVn+bYD/wRTR5LQC0wjA4JpV2TJpE18fepSXNNHAYMP1hf7feDazQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\biro.mark.zoltan\\source\\repos\\ConsoleApp8\\ConsoleApp8.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\marko\\Documents\\IKTProjekt2-C-\\ConsoleApp8\\ConsoleApp8.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marko\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\marko\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\marko\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\marko\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

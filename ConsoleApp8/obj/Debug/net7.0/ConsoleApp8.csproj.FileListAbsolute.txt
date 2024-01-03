@@ -13,3 +13,17 @@ C:\Users\biro.mark.zoltan\source\repos\ConsoleApp8\obj\Debug\net7.0\refint\Conso
 C:\Users\biro.mark.zoltan\source\repos\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.pdb
 C:\Users\biro.mark.zoltan\source\repos\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.genruntimeconfig.cache
 C:\Users\biro.mark.zoltan\source\repos\ConsoleApp8\obj\Debug\net7.0\ref\ConsoleApp8.dll
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\bin\Debug\net7.0\ConsoleApp8.exe
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\bin\Debug\net7.0\ConsoleApp8.deps.json
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\bin\Debug\net7.0\ConsoleApp8.runtimeconfig.json
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\bin\Debug\net7.0\ConsoleApp8.dll
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\bin\Debug\net7.0\ConsoleApp8.pdb
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.AssemblyInfoInputs.cache
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.AssemblyInfo.cs
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.csproj.CoreCompileInputs.cache
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.dll
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\refint\ConsoleApp8.dll
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.pdb
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ConsoleApp8.genruntimeconfig.cache
+C:\Users\marko\Documents\IKTProjekt2-C-\ConsoleApp8\obj\Debug\net7.0\ref\ConsoleApp8.dll

@@ -1,4 +1,6 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System.Reflection.Metadata;
+using System.Reflection.Metadata.Ecma335;
+using System.Runtime.InteropServices;
 
 namespace ConsoleApp8
 {
@@ -14,7 +16,7 @@ namespace ConsoleApp8
                 string tipus = sorElemei[0];
                 string nev = sorElemei[1];
                 string parameter = sorElemei[2];
-                string ar = sorElemei[3];
+                int ar = Convert.ToInt32(sorElemei[3]);
                 alkatreszek.Add(new Alkatresz(tipus, nev, parameter, ar));
             }
         }
@@ -33,7 +35,7 @@ namespace ConsoleApp8
                 Console.Write("Alkatrész paramétere:");
                 string parameter = Console.ReadLine();
                 Console.Write("Alkatrész ára:");
-                string ar = Console.ReadLine();
+                int ar = (Convert.ToInt32(Console.ReadLine()));
                 File.AppendAllText(fajlNev, $"{tipus};{nev};{parameter};{ar}" + Environment.NewLine);
                 Console.WriteLine("Alkatrész hozzáadva\n");
                 
@@ -61,11 +63,96 @@ namespace ConsoleApp8
             int min = Convert.ToInt32(Console.ReadLine());
             Console.Write("Maximum ár:");
             int max = Convert.ToInt32(Console.ReadLine());
-
+            int db = 0;
+            foreach (var a in alkatreszek)
+            {
+                if (min <= a.Ar && max >= a.Ar)
+                {
+                    Console.WriteLine($"Típus: {a.Tipus}\nNév: {a.Nev}\nParaméterek: {a.Parameter}\nÁr: {a.Ar} Ft\n");
+                    db++;
+                }
+            }
+            if (db == 0) Console.WriteLine("Nem található ilyen alkatrész!");
+        }
+        static void Stats()
+        {
+            Console.Write("Írjon be egy típust vagy nevet:");
+            string stat = Console.ReadLine();
+            int db = alkatreszek.Count(a=> a.Tipus.ToLower() == stat.ToLower() || a.Nev.ToLower().Contains(stat.ToLower()));
+            Console.WriteLine($"{db}db van a/az {stat} termékből");
+        }
+        static void Kedvezmeny(string fajlNev)
+        {
+            Console.WriteLine("Írja be a százalékot:");
+            int szazalek = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Írja be a termékeket amire szeretné a kedvezményt(minden,termék neve vagy típusa)");
+            string kedvTermek = Console.ReadLine();
+            File.WriteAllText(fajlNev,"");
+            foreach(var a in alkatreszek)
+            {
+                if (kedvTermek == "minden" || a.Tipus.ToLower() == kedvTermek.ToLower() || a.Tipus.ToLower().Contains(kedvTermek.ToLower()))
+                {
+                    a.Ar = Convert.ToInt32(a.Ar*(1 - szazalek / 100f));
+                    Console.WriteLine(a.Ar);
+                }
+                File.AppendAllText(fajlNev, $"{a.Tipus};{a.Nev};{a.Parameter};{a.Ar}" + Environment.NewLine);
+            }
+        }
+        static void Html()
+        {
+            string eredmeny = "";
+            eredmeny += "<div id=\"container\">";
+            foreach (var a in alkatreszek)
+            {
+                eredmeny += $@"
+    <div class=""termek"">
+        <div>Típus: {a.Tipus}</div>
+        <div>Név: {a.Nev}</div>
+        <div>Paraméter: {a.Parameter}</div>
+        <div>Ár: {a.Ar}</div>
+    </div>";
+            }
+            eredmeny += "\n</div>\n";
+            File.WriteAllText("output.html", eredmeny);
         }
         static void Main(string[] args)
         {
-            
+            string fajlNev = "alkatreszek.txt";
+            while (true)
+            {
+                Console.WriteLine("Írja be hogy melyik feladatot kívánja elindítani(Hozzaadas,Kereses1,Kereses2,Statisztika,Kedvezmeny):");
+                string feladat = Console.ReadLine();
+                Beolvasas(fajlNev);
+                if (feladat == "Hozzaadas")
+                {
+                    Kiirat(fajlNev);
+                    Beolvasas(fajlNev);
+                    Html();
+                }
+                else if (feladat == "Kereses1")
+                {
+                    Search1();
+                }
+                else if (feladat == "Kereses2")
+                {
+                    Search2();
+                }
+                else if (feladat == "Statisztika")
+                {
+                    Stats();
+                }
+                else if (feladat == "Kedvezmeny")
+                {
+                    Kedvezmeny(fajlNev);
+                    Beolvasas(fajlNev);
+                    Html();
+                }
+                else
+                {
+                    continue;
+                }
+            }
+ 
             Console.ReadKey();
         }
     }
