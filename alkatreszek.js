@@ -11,7 +11,7 @@ for (let i = 0; i < 5; i++)
 </form>`
 }
 
-for (let i = 0; 6 < i < 10; i++)
+for (let i = 6; i < 10; i++)
 {
     document.getElementById("valaszt2").innerHTML+=`<form action="">
     <label for="">
@@ -20,7 +20,7 @@ for (let i = 0; 6 < i < 10; i++)
 </form>`
 }
 
-for (let i = 0; 11 < i < 15; i++)
+for (let i = 11; i < 15; i++)
 {
     document.getElementById("valaszt3").innerHTML+=`<form action="">
     <label for="">
@@ -29,7 +29,7 @@ for (let i = 0; 11 < i < 15; i++)
 </form>`
 }
 
-for (let i = 0; 16 < i < 20; i++)
+for (let i = 16; i < 20; i++)
 {
     document.getElementById("valaszt4").innerHTML+=`<form action="">
     <label for="">
@@ -38,7 +38,7 @@ for (let i = 0; 16 < i < 20; i++)
 </form>`
 }
 
-for (let i = 0; 21 < i < 25; i++)
+for (let i = 21; i < 25; i++)
 {
     document.getElementById("valaszt5").innerHTML+=`<form action="">
     <label for="">
@@ -47,7 +47,7 @@ for (let i = 0; 21 < i < 25; i++)
 </form>`
 }
 
-for (let i = 0; 26 < i < 30; i++)
+for (let i = 26; i < 30; i++)
 {
     document.getElementById("valaszt6").innerHTML+=`<form action="">
     <label for="">
@@ -56,7 +56,7 @@ for (let i = 0; 26 < i < 30; i++)
 </form>`
 }
 
-for (let i = 0; 31 < i < 35; i++)
+for (let i = 31; i < 35; i++)
 {
     document.getElementById("valaszt7").innerHTML+=`<form action="">
     <label for="">
@@ -65,7 +65,7 @@ for (let i = 0; 31 < i < 35; i++)
 </form>`
 }
 
-for (let i = 0; 36 < i < 40; i++)
+for (let i = 36; i < 40; i++)
 {
     document.getElementById("valaszt8").innerHTML+=`<form action="">
     <label for="">
@@ -74,7 +74,7 @@ for (let i = 0; 36 < i < 40; i++)
 </form>`
 }
 
-for (let i = 0; 41 < i < 45; i++)
+for (let i = 41; i < 45; i++)
 {
     document.getElementById("valaszt9").innerHTML+=`<form action="">
     <label for="">
@@ -83,7 +83,7 @@ for (let i = 0; 41 < i < 45; i++)
 </form>`
 }
 
-for (let i = 0; 46 < i < 50; i++)
+for (let i = 46; i < 50; i++)
 {
     document.getElementById("valaszt10").innerHTML+=`<form action="">
     <label for="">
@@ -92,7 +92,7 @@ for (let i = 0; 46 < i < 50; i++)
 </form>`
 }
 
-for (let i = 0; 51 < i < 55; i++)
+for (let i = 51; i < 55; i++)
 {
     document.getElementById("valaszt11").innerHTML+=`<form action="">
     <label for="">
@@ -101,7 +101,7 @@ for (let i = 0; 51 < i < 55; i++)
 </form>`
 }
 
-for (let i = 0; 56 < i < 60; i++)
+for (let i = 56; i < 60; i++)
 {
     document.getElementById("valaszt12").innerHTML+=`<form action="">
     <label for="">
@@ -138,7 +138,7 @@ function Atiranyitas1()
     let kivalasztottak = document.getElementById("osszegzes");
     let osszertek = 0
 
-    selectedItemsDiv.innerHTML = "";
+    kivalasztottak.innerHTML = "";
 
     if (alaplap) 
     {
