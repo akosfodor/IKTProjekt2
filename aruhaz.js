@@ -118,7 +118,7 @@ function Ertekeles()
     var ertekelesek = document.getElementById('ertekelesek');
     var ertekeles = document.createElement('div');
     ertekeles.className = 'ertekeles';
-    ertekeles.innerHTML = 'Felhasználó ' + (ertekelesek.childElementCount + 1) + ': ';
+    ertekeles.innerHTML = 'Névtelen felhasználó: <br>';
     var ertek = document.createElement('span');
     ertek.className = 'ertek';
     ertek.textContent = ujert;
