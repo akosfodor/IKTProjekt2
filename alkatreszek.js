@@ -4,122 +4,112 @@ let arak = [28000, 24500, 24500, 28000, 52000, 104000, 98000, 140000, 140000, 19
 
 for (let i = 0; i < 5; i++)
 {
-    document.getElementById("valaszt1").innerHTML+=`<form action="">
+    document.getElementById("valaszt1").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="alaplap" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 6; i < 10; i++)
+for (let i = 5; i < 10; i++)
 {
-    document.getElementById("valaszt2").innerHTML+=`<form action="">
+    document.getElementById("valaszt2").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="proci" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 11; i < 15; i++)
+for (let i = 10; i < 15; i++)
 {
-    document.getElementById("valaszt3").innerHTML+=`<form action="">
+    document.getElementById("valaszt3").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="haz" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 16; i < 20; i++)
+for (let i = 15; i < 20; i++)
 {
-    document.getElementById("valaszt4").innerHTML+=`<form action="">
+    document.getElementById("valaszt4").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="kartya" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 21; i < 25; i++)
+for (let i = 20; i < 25; i++)
 {
-    document.getElementById("valaszt5").innerHTML+=`<form action="">
+    document.getElementById("valaszt5").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="ssd" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 26; i < 30; i++)
+for (let i = 25; i < 30; i++)
 {
-    document.getElementById("valaszt6").innerHTML+=`<form action="">
+    document.getElementById("valaszt6").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="hdd" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 31; i < 35; i++)
+for (let i = 30; i < 35; i++)
 {
-    document.getElementById("valaszt7").innerHTML+=`<form action="">
+    document.getElementById("valaszt7").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="huto" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 36; i < 40; i++)
+for (let i = 35; i < 40; i++)
 {
-    document.getElementById("valaszt8").innerHTML+=`<form action="">
+    document.getElementById("valaszt8").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="ram" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 41; i < 45; i++)
+for (let i = 40; i < 45; i++)
 {
-    document.getElementById("valaszt9").innerHTML+=`<form action="">
+    document.getElementById("valaszt9").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="tap" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 46; i < 50; i++)
+for (let i = 45; i <= 50; i++)
 {
-    document.getElementById("valaszt10").innerHTML+=`<form action="">
+    document.getElementById("valaszt10").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="monitor" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 51; i < 55; i++)
+for (let i = 50; i <= 55; i++)
 {
-    document.getElementById("valaszt11").innerHTML+=`<form action="">
+    document.getElementById("valaszt11").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="eger" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
-for (let i = 56; i < 60; i++)
+for (let i = 55; i <= 60; i++)
 {
-    document.getElementById("valaszt12").innerHTML+=`<form action="">
+    document.getElementById("valaszt12").innerHTML+=`
     <label for="">
         <input type="radio" id="1${i+1}" name="bill" value="${i + 1}"> ${termekek[i]}: <span class="ar">${arak[i]} Ft </span>
-    </label>
-</form>`
+    </label>`
 }
 
 document.querySelectorAll('input[type="radio"]').forEach(function(radio) 
 {
     radio.addEventListener('change', function() 
     {
-        Atiranyitas();  
+        Atiranyitas1();  
     });
 });
 
 function Atiranyitas1()
 {
+
+    console.log("asd")
     let alaplap = document.querySelector('input[name="alaplap"]:checked')
     let proci = document.querySelector('input[name="proci"]:checked')
     let haz = document.querySelector('input[name="haz"]:checked')
@@ -143,73 +133,73 @@ function Atiranyitas1()
     if (alaplap) 
     {
         let index = parseInt(alaplap.value) - 1;
-        kivalasztottak.innerHTML += `<p>Alaplap: ${alaplap.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Alaplap: ${termekek[alaplap.value]}</p>`;
         osszertek += arak[index];
     }
     if (proci) 
     {
         let index = parseInt(proci.value) - 1;
-        kivalasztottak.innerHTML += `<p>Processzor: ${proci.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Processzor: ${termekek[proci.value]}</p>`;
         osszertek += arak[index];
     }
     if (haz) 
     {
         let index = parseInt(haz.value) - 1;
-        kivalasztottak.innerHTML += `<p>Gépház: ${haz.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Gépház: ${termekek[haz.value]}</p>`;
         osszertek += arak[index];
     }
     if (kartya) 
     {
         let index = parseInt(kartya.value) - 1;
-        kivalasztottak.innerHTML += `<p>Videokártya: ${kartya.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Videokártya: ${termekek[kartya.value]}</p>`;
         osszertek += arak[index];
     }
     if (ssd) 
     {
         let index = parseInt(ssd.value) - 1;
-        kivalasztottak.innerHTML += `<p>SSD: ${ssd.value}</p>`;
+        kivalasztottak.innerHTML += `<p>SSD: ${termekek[ssd.value]}</p>`;
         osszertek += arak[index];
     }
     if (hdd) 
     {
         let index = parseInt(hdd.value) - 1;
-        kivalasztottak.innerHTML += `<p>HDD: ${hdd.value}</p>`;
+        kivalasztottak.innerHTML += `<p>HDD: ${termekek[hdd.value]}</p>`;
         osszertek += arak[index];
     }
     if (huto) 
     {
         let index = parseInt(huto.value) - 1;
-        kivalasztottak.innerHTML += `<p>Processzorhűtő: ${huto.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Processzorhűtő: ${termekek[huto.value]}</p>`;
         osszertek += arak[index];
     }
     if (ram) 
     {
         let index = parseInt(ram.value) - 1;
-        kivalasztottak.innerHTML += `<p>RAM: ${ram.value}</p>`;
+        kivalasztottak.innerHTML += `<p>RAM: ${termekek[ram.value]}</p>`;
         osszertek += arak[index];
     }
     if (tap) 
     {
         let index = parseInt(tap.value) - 1;
-        kivalasztottak.innerHTML += `<p>Tápegység: ${tap.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Tápegység: ${termekek[tap.value]}</p>`;
         osszertek += arak[index];
     }
     if (monitor) 
     {
         let index = parseInt(monitor.value) - 1;
-        kivalasztottak.innerHTML += `<p>Tápegység: ${monitor.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Monitor: ${termekek[monitor.value]}</p>`;
         osszertek += arak[index];
     }
     if (eger) 
     {
         let index = parseInt(eger.value) - 1;
-        kivalasztottak.innerHTML += `<p>Tápegység: ${eger.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Egér: ${termekek[eger.value]}</p>`;
         osszertek += arak[index];
     }
     if (bill) 
     {
         let index = parseInt(bill.value) - 1;
-        kivalasztottak.innerHTML += `<p>Tápegység: ${bill.value}</p>`;
+        kivalasztottak.innerHTML += `<p>Billentyűzet: ${termekek[bill.value]}</p>`;
         osszertek += arak[index];
     }
     kivalasztottak.innerHTML += `<p><strong>Végösszeg: ${osszertek} Ft</strong></p>`;
